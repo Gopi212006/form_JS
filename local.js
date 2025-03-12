@@ -1,76 +1,44 @@
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-// -------------------------    
-
-
-
-document.querySelector('#Submit-btn').addEventListener('click',(e)=>{
-    
-    e.preventDefault();
-
-
-let Name=document.getElementById("firstname").value;
-
-let gmail=document.getElementById("gmaild").value;
-
-let dob=document.getElementById("dob").value;
-
-let Age=document.getElementById("Age").value ;
-
-let role=document.getElementById("Role").value;
-
-let gender=document.querySelector('input[name="Gender"]:checked').value;
-
-var store = JSON.parse(localStorage.getItem('customerData')) || [];
+/** @format */
 
 
 
 
-    let customersDeatils=
-        
-            {
+// form submit and store local storage
 
-                custName:Name,
-                custgmail:gmail,
-                custdob:dob,
-                custRole:role,
-                custgender:gender,
-                custAge:Age,
-                custInvites:formsinvite
+document.querySelector("#Submit-btn").addEventListener("click", (e) => {
+  e.preventDefault();
 
-               }
-            
+  let Name = document.getElementById("firstname").value;
 
-               store.push(customersDeatils);
+  let gmail = document.getElementById("gmaild").value;
 
+  let dob = document.getElementById("dob").value;
 
+  let Age = document.getElementById("Age").value;
 
-               localStorage.setItem("customerData",JSON.stringify(store));
+  let role = document.getElementById("Role").value;
 
-               document.getElementById("formDetails").reset();
+  let gender = document.querySelector('input[name="Gender"]:checked').value;
 
-               formsinvite=[]
-             
-               document.getElementById("ul-container").innerHTML = '';
+  var store = JSON.parse(localStorage.getItem("customerData")) || [];
 
-               alert("Successfuly register");
+  let customersDeatils = {
+    custName: Name,
+    custgmail: gmail,
+    custdob: dob,
+    custRole: role,
+    custgender: gender,
+    custAge: Age,
+    custInvites: formsinvite,
+  };
 
+  localStorage.setItem("customerData", JSON.stringify(store));
 
-  
-            
-        
+  document.getElementById("formDetails").reset();
 
-})
+  formsinvite = [];
 
+  document.getElementById("ul-container").innerHTML = "";
 
+  alert("Successfuly register");
+});
