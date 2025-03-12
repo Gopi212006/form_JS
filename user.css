@@ -73,6 +73,17 @@ input {
 
 }
 
+#deatils{
+
+    border: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 50%;
+    height: 40px;
+    font-size: larger;
+    background-color: #b5b2e7aa;
+}
+
 #Gmail-btn:hover{
     background-color: #218838;
 }
