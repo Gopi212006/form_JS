@@ -1,0 +1,73 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title> invitation form</title>
+    <link rel="stylesheet" href="user.css">
+  </head>
+  <body>
+
+
+
+    <h3>Registeration form</h3>
+    <div id="maincontainer">
+
+      
+      <form id="formDetails">
+        
+          <label> Name </label>
+          <input type="text"name="firstname"id="firstname"required placeholder="Enter your Name"/>
+       
+          <label> Gmail </label>
+          <input type="email"name="last"id="gmaild"required placeholder="Enter your Gmail" />
+      
+          <label> Age</label>
+          <input
+            type="number"
+            required name="Age" id="Age"  min="20"  max="60"  placeholder=" Enter your age "/>
+        
+          <label> Date of Birth</label>
+          <input type="date" name="dob" id="dob" required />
+        
+          <label> Role </label>
+          <input type="text"name="Role"id="Role"required placeholder="Role"/>
+         
+       
+          <lable  id="gender"> <b>Gender</b></lable> 
+
+          <div  id="genderdiv">
+          
+          <input type="radio" name="Gender" value="male" id="male" required />
+          <lable> Male </lable>
+          <br>
+         
+          <input for="" type="radio" name="Gender" value="female" required />
+          <lable>Female </lable>
+        </div>
+
+          <div id="gmailContainer">
+        <input type="email" id="inputValue" placeholder="Enter a Gmail">
+        <button id="Gmail-btn" >Add Gmail</button>
+        <ul id="ul-container">
+      
+        </ul>
+ 
+</div>
+
+         
+          <button id="Submit-btn">Submit</button>
+      </form>
+    </div>
+
+
+    <button id="deatils"  >   <a href="index1.html"> View data</a></button> 
+ 
+
+
+  <script src="form.js"></script>
+<script src="local.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF2F2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#maincontainer {
+    background: #ffeed4;
+   margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 370px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+   
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+#Submit-btn {
+    background: #ff0101;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#Submit-btn:hover {
+    background: #218838;
+}
+
+
+#Gmail-btn{
+    background: #ff0101;
+    color: white;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0px 10px 12px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+#Gmail-btn:hover{
+    background-color: #218838;
+}
+
+#inputValue{
+    width:250px;
+}
+#gender{
+    margin-top: 10px;
+}
+
+
+.listStyle{
+    list-style: none;
+    padding: 10px;
+   
+}
+
+
+#ul-container{
+    background-color: #dcdeff;
+    border-radius: 10px;
+}
+
+#delete-button{
+
+background-color: #e66e0d;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+font-size: large;
+margin-left: 30px;
+
+
+}
