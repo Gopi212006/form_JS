@@ -1,10 +1,6 @@
 /** @format */
 
 
-
-
-// form submit and store local storage
-
 document.querySelector("#Submit-btn").addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -31,6 +27,8 @@ document.querySelector("#Submit-btn").addEventListener("click", (e) => {
     custAge: Age,
     custInvites: formsinvite,
   };
+
+  store.push(customersDeatils);
 
   localStorage.setItem("customerData", JSON.stringify(store));
 

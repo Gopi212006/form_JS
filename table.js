@@ -1,14 +1,9 @@
 /** @format */
 
-
-
-// show data  in the table in another page and delete in local storage
-
-
 document.addEventListener("DOMContentLoaded", function () {
   let data = document.getElementById("deatils");
 
-  let store = JSON.parse(localStorage.getItem('customerData')) || [];
+  let store = JSON.parse(localStorage.getItem("customerData")) || [];
 
   console.log(store);
 
@@ -64,6 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     tabBody.appendChild(tabRow);
 
-   
+    // console.log(btn);
   });
 });
